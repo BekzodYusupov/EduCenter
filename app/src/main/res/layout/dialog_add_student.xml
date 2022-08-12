@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_gravity="center|top"
+    android:layout_height="wrap_content"
+    android:background="#A7EAF3"
+    android:padding="16dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type Student Fullname"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:id="@+id/inputStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginVertical="8dp"
+        android:hint="type..." />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:backgroundTint="#FFC107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ok" />
+
+</LinearLayout>

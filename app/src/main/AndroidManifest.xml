@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="uz.gita.eduroom">
+
+    <application
+        android:name="uz.gita.eduroom.App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EduCenter"
+        tools:targetApi="31">
+        <activity
+            android:name="uz.gita.eduroom.ui.screen.StudentActivity"
+            android:exported="false" />
+        <activity
+            android:name="uz.gita.eduroom.ui.screen.GroupActivity"
+            android:exported="false" />
+        <activity
+            android:name="uz.gita.eduroom.ui.screen.CourseActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="uz.gita.eduroom.ui.screen.MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
